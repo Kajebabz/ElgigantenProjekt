@@ -41,11 +41,12 @@ namespace Elgiganten.Service
             List<Item> filterList = new List<Item>();
             foreach (Item item in items)
             {
-                if (item.Price >= minPrice && item.Price <= maxPrice)
+                if (item.Price>=minPrice && item.Price<=maxPrice)
                 {
                     filterList.Add(item);
                 }
             }
+
             return filterList;
         }
         public void UpdateItem(Item item)
