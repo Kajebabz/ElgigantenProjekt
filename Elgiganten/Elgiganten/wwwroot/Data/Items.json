@@ -4,7 +4,7 @@
     "Name": "PC",
     "Brand": "Vision",
     "Description": "Kraftig computer til lav pris",
-    "Price": 10.999
+    "Price": 10999
   },
   {
     "Id": 3,
@@ -19,5 +19,12 @@
     "Brand": "Samsung",
     "Description": "Super fancy tablet til billige penge",
     "Price": 999
+  },
+  {
+    "Id": 4,
+    "Name": "gwgw",
+    "Brand": "gweg",
+    "Description": "gweg",
+    "Price": 423
   }
 ]

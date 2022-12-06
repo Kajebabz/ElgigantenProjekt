@@ -1,5 +1,6 @@
 ﻿using Elgiganten.Models;
 using Elgiganten.Pages.Item;
+
 namespace Elgiganten.Service
 {
     public class ItemService : IItemService
@@ -46,7 +47,6 @@ namespace Elgiganten.Service
                     filterList.Add(item);
                 }
             }
-
             return filterList;
         }
         public void UpdateItem(Item item)
