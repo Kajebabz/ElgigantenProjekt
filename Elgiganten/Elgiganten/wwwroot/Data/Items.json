@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Name": "PC",
+    "Brand": "Vision",
+    "Description": "Kraftig computer til lav pris",
+    "Price": 10.999
+  },
+  {
+    "Id": 3,
+    "Name": "Tastatur",
+    "Brand": "Steelseries",
+    "Description": "qwerty apex, mekanisk",
+    "Price": 999
+  }
+]
