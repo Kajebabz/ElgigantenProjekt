@@ -31,6 +31,11 @@ namespace Elgiganten.Pages.Item
             Items = _itemService.NameSearch(SearchString).ToList();
             return Page();
         }
+        public IActionResult OnPostTypeSearch()
+        {
+            Items = _itemService.TypeSearch(SearchString).ToList();
+            return Page();
+        }
         public IActionResult OnPostPriceFilter(int maxPrice, int minPrice = 0)
         {
             Items = _itemService.PriceFilter(maxPrice, minPrice).ToList();
