@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "Name": "Lone",
+    "Address": "BingBangvej 7",
+    "PhoneNr": "23569812",
+    "Email": "Lone@mail.dk"
+  },
+  {
+    "Id": 2,
+    "Name": "Hans",
+    "Address": "Langvej 2",
+    "PhoneNr": "12345678",
+    "Email": "Hans@mail.dk"
+  },
+  {
+    "Id": 3,
+    "Name": "Birthe",
+    "Address": "Lillevej 67",
+    "PhoneNr": "89456719",
+    "Email": "Birthe@mail.dk"
+  },
+  {
+    "Id": 4,
+    "Name": "Hassan",
+    "Address": "N\u00E6ver",
+    "PhoneNr": "42069016",
+    "Email": "Hassan2@mail.dk"
+  },
+  {
+    "Id": 695,
+    "Name": "Cola",
+    "Address": "stralauer allee 4 Berlin",
+    "PhoneNr": "26069069",
+    "Email": "cola@email.dk"
+  },
+  {
+    "Id": 543,
+    "Name": "mika",
+    "Address": "ish\u00F8j",
+    "PhoneNr": "49252525",
+    "Email": "mika@hotma.com"
+  }
+]
