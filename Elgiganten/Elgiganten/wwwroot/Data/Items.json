@@ -19,5 +19,12 @@
     "Brand": "gweg",
     "Description": "gweg",
     "Price": 423
+  },
+  {
+    "Id": 7,
+    "Name": "hassan",
+    "Brand": "nike",
+    "Description": "sodavander",
+    "Price": 2222
   }
 ]
