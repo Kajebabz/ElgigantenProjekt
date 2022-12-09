@@ -7,6 +7,7 @@ namespace Elgiganten.Models
     {
 
         public int Id { get; set; }
+        public string Type { get; set; }
         public string Name { get; set; }
         public string Brand { get; set; }
         public string Description { get; set; }
@@ -16,9 +17,10 @@ namespace Elgiganten.Models
         {
         }
 
-        public Item(int id, string name, string brand, string description, double price)
+        public Item(int id, string type, string name, string brand, string description, double price)
         {
             Id = id;
+            Type = type;
             Name = name;
             Brand = brand;
             Description = description;
