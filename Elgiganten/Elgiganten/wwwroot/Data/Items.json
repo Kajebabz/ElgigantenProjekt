@@ -10,33 +10,65 @@
   {
     "Id": 2,
     "Type": "Monitor",
-    "Name": "BenQ Sk\u00E6rm",
-    "Brand": "BenQ",
-    "Description": "4k qled",
+    "Name": "Dell UltraSharp 27, 4k",
+    "Brand": "Dell",
+    "Description": "Super fast 4k 160hz Monitor",
     "Price": 2999
   },
   {
     "Id": 3,
     "Type": "Hardware",
-    "Name": "Tastatur",
-    "Brand": "Steelseries",
-    "Description": "qwerty apex, mekanisk",
-    "Price": 999
+    "Name": "RTX 3090",
+    "Brand": "ASUS",
+    "Description": "Mest kr\u00E6ftfulde grafikkort p\u00E5 markedet",
+    "Price": 6999
   },
   {
     "Id": 4,
     "Type": "Hardware",
-    "Name": "Mus",
-    "Brand": "Steelseries",
-    "Description": "8 knapper, 10000 dpi",
-    "Price": 299
+    "Name": "RTX 4090",
+    "Brand": "ASUS",
+    "Description": "Mest kr\u00E6ftfulde grafikkort der findes",
+    "Price": 7999
   },
   {
     "Id": 5,
-    "Type": "Monitor",
-    "Name": "Samsung Sk\u00E6rm",
+    "Type": "Konsol",
+    "Name": "Playstation 5",
+    "Brand": "Sony",
+    "Description": "Den nyeste playstation ",
+    "Price": 4999
+  },
+  {
+    "Id": 6,
+    "Type": "Home",
+    "Name": "V15",
+    "Brand": "Dyson",
+    "Description": "Dysons mest kr\u00E6ftfulde ledningsfrie st\u00F8vsuger ",
+    "Price": 5590
+  },
+  {
+    "Id": 7,
+    "Type": "Konsol",
+    "Name": "Xbox series x",
+    "Brand": "Microsoft",
+    "Description": "Mest kr\u00E6ftfulde xbox",
+    "Price": 4999
+  },
+  {
+    "Id": 8,
+    "Type": "Tv og Lyd",
+    "Name": "Q60b",
     "Brand": "Samsung",
-    "Description": "Fin hurtig 144hz sk\u00E6rm",
-    "Price": 2199
+    "Description": "Samsung serie 6 qled tv",
+    "Price": 3999
+  },
+  {
+    "Id": 9,
+    "Type": "Tv og Lyd",
+    "Name": "q70B",
+    "Brand": "Samsung",
+    "Description": "Samsungs 120hz serie 7 qled tv",
+    "Price": 6000
   }
 ]

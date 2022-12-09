@@ -13,13 +13,16 @@ namespace Elgiganten.Models
         public string Description { get; set; }
         public double Price { get; set; }
 
+        public static int nextId = 1;
+
         public Item()
         {
+            Id = nextId++;
         }
 
-        public Item(int id, string type, string name, string brand, string description, double price)
+        public Item(string type, string name, string brand, string description, double price)
         {
-            Id = id;
+            Id = nextId++;
             Type = type;
             Name = name;
             Brand = brand;
