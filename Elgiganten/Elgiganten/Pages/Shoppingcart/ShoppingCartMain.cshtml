@@ -1,0 +1,36 @@
+﻿@page
+@model Elgiganten.Pages.Shoppingcart.ShoppingCartMainModel
+@{
+}
+<h1>Shopping Cart</h1>
+<table class="table table-bordered table-hover table-opacity" width="50%"
+<thead>
+    <tr class="btn-secondary active">
+        <th>
+            item
+        </th>
+    </tr>
+</thead>
+<tbody>
+        @if (Model.Cart != null)
+        {
+
+            @foreach (var item in Model.Cart)
+            {
+                <tr class="btn-secondary">
+                    <td>
+                        @item.Quantity
+                    </td>
+                </tr>
+                    @*<li>@item.Name (@item.Quantity) - @item.Price</li>*@
+            }
+
+        }
+</tbody>
+
+@*<p>Total: @Model.TotalPrice</p>*@
+
+<form method="post">
+   @* <button type="submit" name="remove" value="@Model.Cart[0].Id">Remove First Item</button>*@
+    <button type="submit" name="clear">Clear Cart</button>
+</form>
