@@ -5,11 +5,11 @@ namespace Elgiganten.Service
 {
     public interface ICustomerService
     {
-        List<Customer> GetCustomers();
-        void AddCustomer(Customer customer);
-        void UpdateCustomer(Customer customer);
-        Customer GetCustomer(int id);
-        Customer DeleteCustomer(int? CustomerId);
-        IEnumerable<Customer> NameSearch(string str);
+        List<ShoppingCart> GetCustomers();
+        void AddCustomer(ShoppingCart customer);
+        void UpdateCustomer(ShoppingCart customer);
+        ShoppingCart GetCustomer(int id);
+        ShoppingCart DeleteCustomer(int? CustomerId);
+        IEnumerable<ShoppingCart> NameSearch(string str);
     }
 }

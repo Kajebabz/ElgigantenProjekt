@@ -14,7 +14,7 @@ namespace Elgiganten.Pages.Customer
         }
 
         [BindProperty]
-        public Models.Customer customer { get; set; }
+        public Models.ShoppingCart customer { get; set; }
 
 
         public IActionResult OnGet()

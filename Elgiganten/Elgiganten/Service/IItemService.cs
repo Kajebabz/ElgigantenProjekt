@@ -12,9 +12,5 @@ namespace Elgiganten.Service
         Item DeleteItem(int? itemId);
         IEnumerable<Item> NameSearch(string str);
         IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0);
-
-
-
     }
-
 }

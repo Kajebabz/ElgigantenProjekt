@@ -15,7 +15,7 @@ namespace Elgiganten.Pages.Customer
             _customerService = customerService;
         }
 
-        public List<Models.Customer> _customers { get; private set; }
+        public List<Models.ShoppingCart> _customers { get; private set; }
 
 
         public IActionResult OnGet()

@@ -6,9 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IItemService, ItemService>();
-builder.Services.AddSingleton<ICustomerService, CustomerService>(); //NEEDS WORK!!!!!!!!!!!!!!!!!!!!
+builder.Services.AddSingleton<ICustomerService, CustomerService>();
+builder.Services.AddSingleton<IShoppingCartService, ShoppingCartService>();//NEEDS WORK!!!!!!!!!!!!!!!!!!!!
 builder.Services.AddTransient<JsonFileItemService>();
 builder.Services.AddTransient<JsonFileCustomerService>();
+builder.Services.AddTransient<JsonFileShoppingCart>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

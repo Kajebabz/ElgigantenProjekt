@@ -3,27 +3,27 @@ using System.Text.Json;
 
 namespace Elgiganten.Service
 {
-    public class JsonFileCustomerService
+    public class JsonFileShoppingCart
     {
         public IWebHostEnvironment WebHostEnvironment { get; }
         private string JsonFileName
         {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "Data", "Customers.json"); }
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "Data", "ShoppingCart.json"); }
         }
 
-        public JsonFileCustomerService(IWebHostEnvironment webHostEnvironment)
+        public JsonFileShoppingCart(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
 
-        public IEnumerable<ShoppingCart> GetJsonCustomers()
+        public IEnumerable<ShoppingCartService> GetJsonShoppingCart()
         {
             using (StreamReader jsonFileReader = File.OpenText(JsonFileName))
             {
-                return JsonSerializer.Deserialize<ShoppingCart[]>(jsonFileReader.ReadToEnd());
+                return JsonSerializer.Deserialize<ShoppingCartService[]>(jsonFileReader.ReadToEnd());
             }
         }
-        public void SaveJsonCustomers(List<ShoppingCart> customers)
+        public void SaveJsonShoppingCarts(List<ShoppingCartService> shoppingCarts)
         {
             using (FileStream jsonFileWriter = File.Create(JsonFileName))
             {
@@ -32,8 +32,9 @@ namespace Elgiganten.Service
                     SkipValidation = false,
                     Indented = true
                 });
-                JsonSerializer.Serialize<ShoppingCart[]>(jsonWriter, customers.ToArray());
+                JsonSerializer.Serialize<ShoppingCartService[]>(jsonWriter, shoppingCarts.ToArray());
             }
         }
+
     }
 }
