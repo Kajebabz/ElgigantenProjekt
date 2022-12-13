@@ -6,14 +6,7 @@
 <h1>Items</h1>
 
 <div class="row">
-    <div class="col-4"><h5>Search Name</h5></div>
-    <div class="col-4"><h5>Search Type</h5></div>
-    <div class="col-4"><h5>Filter Price</h5></div>
-    <div class="col-4"></div>
-</div>
-
-<div class="row">
-    <div class="col-4">
+    <div class="col-4"><h5>Search Name</h5>
         <form method="post" class="form-inline">
             <div class="input-group mb-3">
                 <input asp-for="SearchString" class="form-control mr-1" placeholder="Enter Name" />
@@ -21,35 +14,33 @@
             </div>
         </form>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <form method="post" class="form-inline">
-                <div class="input-group mb-3">
-                    <input asp-for="SearchString" class="form-control mr-1" placeholder="Enter Type" />
-                    <input type="submit" asp-page-handler="TypeSearch" value="Search" class="btn btn-primary" />
-                </div>
-            </form>
-        </div>
-
-    <div class="col-5">
-        <form method="post" class="form-inline">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Min</span>
-                </div>
-                <input asp-for="MinPrice" class="form-control mr-1" />
-
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Max</span>
-                </div>
-                <input asp-for="MaxPrice" class="form-control mr-1" />
-                <input type="submit" asp-page-handler="PriceFilter" value="Filter" class="btn btn-primary" />
-            </div>
-        </form>
+    <div class="col-4"><h5>Search Type</h5>
+                    <form method="post" class="form-inline">
+                         <div class="input-group mb-3">
+                             <input asp-for="SearchString" class="form-control mr-1" placeholder="Enter Type" />
+                             <input type="submit" asp-page-handler="TypeSearch" value="Search" class="btn btn-primary" />
+                         </div>
+                     </form>
     </div>
+    <div class="col-4"><h5>Filter Price</h5>
+                <form method="post" class="form-inline">
+                     <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text">Min</span>
+                          </div>
+                             <input asp-for="MinPrice" class="form-control mr-1" />
 
-    <div class="col-2"></div>
+                         <div class="input-group-prepend">
+                             <span class="input-group-text">Max</span>
+                         </div>
+                             <input asp-for="MaxPrice" class="form-control mr-1" />
+                             <input type="submit" asp-page-handler="PriceFilter" value="Filter" class="btn btn-primary" />
+                     </div>
+                </form>
+    </div>
+    <div class="col-4"></div>
 </div>
+
 
 <table class="table table-bordered table-hover table-opacity" width="50%">
     <colgroup>
