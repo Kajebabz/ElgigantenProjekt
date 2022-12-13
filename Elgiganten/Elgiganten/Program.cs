@@ -1,5 +1,6 @@
 using Elgiganten.Models;
 using Elgiganten.Service;
+using Elgiganten.MockData;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,10 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IItemService, ItemService>();
 builder.Services.AddSingleton<ICustomerService, CustomerService>();
-builder.Services.AddSingleton<IShoppingCartService, ShoppingCartService>();//NEEDS WORK!!!!!!!!!!!!!!!!!!!!
+builder.Services.AddSingleton<OrdreService, OrdreService>();
+//NEEDS WORK!!!!!!!!!!!!!!!!!!!!
 builder.Services.AddTransient<JsonFileItemService>();
 builder.Services.AddTransient<JsonFileCustomerService>();
-builder.Services.AddTransient<JsonFileShoppingCart>();
+builder.Services.AddTransient<JsonOrdreFileService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -9,7 +9,7 @@ namespace Elgiganten.Pages.Customer
         private ICustomerService _customerService;
 
         [BindProperty]
-        public Models.ShoppingCart Customer { get; set; }
+        public Models.Customer Customer { get; set; }
 
         public DeleteCustomerModel(ICustomerService customerService)
         {
@@ -27,7 +27,7 @@ namespace Elgiganten.Pages.Customer
 
         public IActionResult OnPost()
         {
-            Models.ShoppingCart deletedCustomer = _customerService.DeleteCustomer(Customer.Id);
+            Models.Customer deletedCustomer = _customerService.DeleteCustomer(Customer.Id);
             if (deletedCustomer == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
             return RedirectToPage("GetAllCustomer");

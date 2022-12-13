@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace Elgiganten.Models
 {
-    public class ShoppingCart
+    public class Customer
     {
 
 
@@ -29,11 +29,11 @@ namespace Elgiganten.Models
         public string Email { get; set; }
 
 
-            public ShoppingCart()
+            public Customer()
             {
             }
 
-            public ShoppingCart(int id, string name, string address, string phoneNr, string email)
+            public Customer(int id, string name, string address, string phoneNr, string email)
             {
                 Id = id;
                 Name = name;

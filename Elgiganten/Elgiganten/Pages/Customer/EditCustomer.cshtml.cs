@@ -7,7 +7,7 @@ namespace Elgiganten.Pages.Customer
     public class EditCustomerModel : PageModel
     {
         [BindProperty]
-        public Models.ShoppingCart Customer { get; set; }
+        public Models.Customer Customer { get; set; }
 
         private ICustomerService _customerService;
 

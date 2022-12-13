@@ -16,14 +16,14 @@ namespace Elgiganten.Service
             WebHostEnvironment = webHostEnvironment;
         }
 
-        public IEnumerable<ShoppingCart> GetJsonCustomers()
+        public IEnumerable<Customer> GetJsonCustomers()
         {
             using (StreamReader jsonFileReader = File.OpenText(JsonFileName))
             {
-                return JsonSerializer.Deserialize<ShoppingCart[]>(jsonFileReader.ReadToEnd());
+                return JsonSerializer.Deserialize<Customer[]>(jsonFileReader.ReadToEnd());
             }
         }
-        public void SaveJsonCustomers(List<ShoppingCart> customers)
+        public void SaveJsonCustomers(List<Customer> customers)
         {
             using (FileStream jsonFileWriter = File.Create(JsonFileName))
             {
@@ -32,7 +32,7 @@ namespace Elgiganten.Service
                     SkipValidation = false,
                     Indented = true
                 });
-                JsonSerializer.Serialize<ShoppingCart[]>(jsonWriter, customers.ToArray());
+                JsonSerializer.Serialize<Customer[]>(jsonWriter, customers.ToArray());
             }
         }
     }

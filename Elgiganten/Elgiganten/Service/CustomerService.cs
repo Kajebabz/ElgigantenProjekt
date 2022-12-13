@@ -5,7 +5,7 @@ namespace Elgiganten.Service
 {
     public class CustomerService : ICustomerService
     {
-        private List<ShoppingCart> customers;
+        private List<Customer> customers;
 
         private JsonFileCustomerService JsonFileCustomerService { get; set; }
 
@@ -16,21 +16,21 @@ namespace Elgiganten.Service
             customers = jsonFileCustomerService.GetJsonCustomers().ToList();
         }
 
-        public List<ShoppingCart> GetCustomers()
+        public List<Customer> GetCustomers()
         {
             return customers;
         }
 
-        public void AddCustomer(ShoppingCart customer)
+        public void AddCustomer(Customer customer)
         {
             customers.Add(customer);
             JsonFileCustomerService.SaveJsonCustomers(customers);
         }
 
-        public IEnumerable<ShoppingCart> NameSearch(string str)
+        public IEnumerable<Customer> NameSearch(string str)
         {
-            List<ShoppingCart> nameSearch= new List<ShoppingCart>();
-            foreach (ShoppingCart customer in customers)
+            List<Customer> nameSearch= new List<Customer>();
+            foreach (Customer customer in customers)
             {
                 if (customer.Name.ToLower().Contains(str.ToLower()))
                 {
@@ -40,11 +40,11 @@ namespace Elgiganten.Service
             return nameSearch;
         }
 
-        public void UpdateCustomer(ShoppingCart customer)
+        public void UpdateCustomer(Customer customer)
         {
             if (customer != null)
             {
-                foreach (ShoppingCart i in customers)
+                foreach (Customer i in customers)
                 {
                     if (i.Id == customer.Id)
                     {
@@ -58,19 +58,19 @@ namespace Elgiganten.Service
                 JsonFileCustomerService.SaveJsonCustomers(customers);
             }
         }
-        public ShoppingCart GetCustomer(int id)
+        public Customer GetCustomer(int id)
         {
-            foreach (ShoppingCart customer in customers)
+            foreach (Customer customer in customers)
             {
                 if (customer.Id == id)
                     return customer;
             }
             return null;
         }
-        public ShoppingCart DeleteCustomer(int? CustomerId)
+        public Customer DeleteCustomer(int? CustomerId)
         {
-            ShoppingCart customerToBeDeleted = null;
-            foreach (ShoppingCart i in customers)
+            Customer customerToBeDeleted = null;
+            foreach (Customer i in customers)
             {
                 if (i.Id == CustomerId)
                 {

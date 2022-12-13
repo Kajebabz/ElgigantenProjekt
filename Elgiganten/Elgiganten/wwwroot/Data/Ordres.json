@@ -1,0 +1,6 @@
+﻿namespace Elgiganten.wwwroot.Data
+{
+    public class Ordre
+    {
+    }
+}
