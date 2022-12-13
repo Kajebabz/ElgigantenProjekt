@@ -73,7 +73,10 @@ namespace Elgiganten.Service
                 {
                     if (i.Id == item.Id)
                     {
+                        i.Type = item.Type;
                         i.Name = item.Name;
+                        i.Brand = item.Brand;
+                        i.Description = item.Description;
                         i.Price = item.Price;
                     }
                 }

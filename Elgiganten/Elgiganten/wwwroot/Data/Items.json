@@ -26,10 +26,10 @@
   {
     "Id": 4,
     "Type": "Hardware",
-    "Name": "Intel",
+    "Name": "GeForce RTX 3060 Ti",
     "Brand": "ASUS",
     "Description": "Mest kr\u00E6ftfulde grafikkort der findes",
-    "Price": 700
+    "Price": 3999
   },
   {
     "Id": 5,
@@ -70,5 +70,53 @@
     "Brand": "Samsung",
     "Description": "Samsungs 120hz serie 7 qled tv",
     "Price": 6000
+  },
+  {
+    "Id": 10,
+    "Type": "Mobil og Tablet",
+    "Name": "iPad 10,2\u0022 (2021) 64 GB ",
+    "Brand": "Apple",
+    "Description": "iPad 10,2\u0022 Retina sk\u00E6rm, A13 Bionic processor",
+    "Price": 2888
+  },
+  {
+    "Id": 11,
+    "Type": "Mobil og Tablet",
+    "Name": "iPad Pro 11\u0022 256 GB",
+    "Brand": "Apple",
+    "Description": "iPad 11\u0022 Liquid Retina XDR-Sk\u00E6rm, FaceID, LiDAR Scanner",
+    "Price": 8999
+  },
+  {
+    "Id": 12,
+    "Type": "Mobil og Tablet",
+    "Name": "Samsung Galaxy S22",
+    "Brand": "Samsung",
+    "Description": "6,1\u0022 Infinity-O 120hz touchsk\u00E6rm, 128 GB",
+    "Price": 6699
+  },
+  {
+    "Id": 13,
+    "Type": "Mobil og Tablet",
+    "Name": "Sony Xperia 10 IV",
+    "Brand": "Sony",
+    "Description": "6,0\u0022 FHD\u002B OLED-Touchsk\u00E6rm, 128 GB, 12\u002B8\u002B8 MP Triplekamera",
+    "Price": 3999
+  },
+  {
+    "Id": 14,
+    "Type": "Mobil og Tablet",
+    "Name": "iPhone 14 Plus",
+    "Brand": "Apple",
+    "Description": "6,7\u0022 Super Retina XDR-Sk\u00E6rm, 128 GB, A15 Bionic CPU 5G",
+    "Price": 8799
+  },
+  {
+    "Id": 17,
+    "Type": "aaa",
+    "Name": "aaa",
+    "Brand": "aaa",
+    "Description": "aaa",
+    "Price": 100
   }
 ]
