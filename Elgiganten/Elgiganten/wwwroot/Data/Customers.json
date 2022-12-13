@@ -28,17 +28,10 @@
     "Email": "Hassan2@mail.dk"
   },
   {
-    "Id": 695,
-    "Name": "Cola",
-    "Address": "stralauer allee 4 Berlin",
-    "PhoneNr": "26069069",
-    "Email": "cola@email.dk"
-  },
-  {
-    "Id": 543,
-    "Name": "mika",
-    "Address": "Br\u00F8ndby",
-    "PhoneNr": "49252525",
-    "Email": "mikaa@hotma.com"
+    "Id": 5,
+    "Name": "Mads The Man",
+    "Address": "Madsensvej 24, 4550 Assens",
+    "PhoneNr": "88888888",
+    "Email": "MadsTheMan@yahoo.dk"
   }
 ]

@@ -28,14 +28,16 @@ namespace Elgiganten.Models
         [Required(ErrorMessage = "Der Skal Angives Email på Kunde")]
         public string Email { get; set; }
 
+        public static int nextId = 1;
+
 
             public Customer()
             {
             }
 
-            public Customer(int id, string name, string address, string phoneNr, string email)
+            public Customer(string name, string address, string phoneNr, string email)
             {
-                Id = id;
+                Id = nextId++;
                 Name = name;
                 Address = address;
                 PhoneNr = phoneNr;
