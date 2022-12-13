@@ -1,30 +1,42 @@
 [
   {
     "Id": 1,
-    "Name": "PC",
+    "Type": "PC",
+    "Name": "Intel",
     "Brand": "Vision",
     "Description": "Kraftig computer til lav pris",
-    "Price": 10999
+    "Price": 10.999
+  },
+  {
+    "Id": 2,
+    "Type": "Monitor",
+    "Name": "BenQ Sk\u00E6rm",
+    "Brand": "BenQ",
+    "Description": "4k qled",
+    "Price": 2999
   },
   {
     "Id": 3,
+    "Type": "Hardware",
     "Name": "Tastatur",
     "Brand": "Steelseries",
     "Description": "qwerty apex, mekanisk",
     "Price": 999
   },
   {
-    "Id": 2,
-    "Name": "Tablet",
-    "Brand": "Samsung",
-    "Description": "Super fancy tablet til billige penge",
-    "Price": 999
+    "Id": 4,
+    "Type": "Hardware",
+    "Name": "Mus",
+    "Brand": "Steelseries",
+    "Description": "8 knapper, 10000 dpi",
+    "Price": 299
   },
   {
-    "Id": 4,
-    "Name": "gwgw",
-    "Brand": "gweg",
-    "Description": "gweg",
-    "Price": 423
+    "Id": 5,
+    "Type": "Monitor",
+    "Name": "Samsung Sk\u00E6rm",
+    "Brand": "Samsung",
+    "Description": "Fin hurtig 144hz sk\u00E6rm",
+    "Price": 2199
   }
 ]
