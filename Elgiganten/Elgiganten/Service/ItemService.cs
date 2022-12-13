@@ -37,7 +37,21 @@ namespace Elgiganten.Service
             }
             return nameSearch;
         }
-        public IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0)
+
+        public IEnumerable<Item> TypeSearch(string str)
+        {
+            List<Item> typeSearch = new List<Item>();
+            foreach (Item item in items)
+            {
+                if (item.Type.ToLower().Contains(str.ToLower()))
+                {
+                    typeSearch.Add(item);
+                }
+            }
+            return typeSearch;
+        }
+
+            public IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0)
         {
             List<Item> filterList = new List<Item>();
             foreach (Item item in items)
