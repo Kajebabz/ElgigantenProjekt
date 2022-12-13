@@ -17,7 +17,6 @@ namespace Elgiganten.Models
 
         public Item()
         {
-            Id = nextId++;
         }
 
         public Item(string type, string name, string brand, string description, double price)

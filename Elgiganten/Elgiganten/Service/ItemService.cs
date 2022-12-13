@@ -13,7 +13,7 @@ namespace Elgiganten.Service
             JsonFileItemService = jsonFileItemService;
              // items = MockData.MockItems.GetMockItems();
              items = JsonFileItemService.GetJsonItems().ToList();
-             Item.nextId = items[^1].Id++;
+             Item.nextId = items[^1].Id + 1;
         }
 
 
@@ -23,6 +23,7 @@ namespace Elgiganten.Service
         }
         public void AddItem(Item item)
         {
+            item.Id = Item.nextId++;
             items.Add(item);
             JsonFileItemService.SaveJsonItems(items);
         }

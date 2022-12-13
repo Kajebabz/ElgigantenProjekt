@@ -28,11 +28,6 @@ namespace Elgiganten.Pages.Item
                 {
                     return Page();
                 }
-                //var item = new Models.Item
-                //{
-                //      Name = Request.Form[Item.Name]
-                //};
-
                 _itemService.AddItem(Item);
                 return RedirectToPage("GetAllItems");
             }

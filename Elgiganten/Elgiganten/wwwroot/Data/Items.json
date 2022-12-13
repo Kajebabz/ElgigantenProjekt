@@ -5,7 +5,7 @@
     "Name": "Intel",
     "Brand": "Vision",
     "Description": "Kraftig computer til lav pris",
-    "Price": 10.999
+    "Price": 10999
   },
   {
     "Id": 2,
@@ -26,10 +26,10 @@
   {
     "Id": 4,
     "Type": "Hardware",
-    "Name": "RTX 4090",
+    "Name": "Intel",
     "Brand": "ASUS",
     "Description": "Mest kr\u00E6ftfulde grafikkort der findes",
-    "Price": 7999
+    "Price": 700
   },
   {
     "Id": 5,
