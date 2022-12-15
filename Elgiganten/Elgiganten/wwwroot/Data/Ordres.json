@@ -18,5 +18,25 @@
     },
     "OrdreDate": "2022-01-20T00:00:00",
     "Quantity": 10
+  },
+  {
+    "Id": 2,
+    "Item": {
+      "Id": 2,
+      "Type": "PC",
+      "Name": "Intel",
+      "Brand": "Vision",
+      "Description": "Kraftig computer til lav pris",
+      "Price": 10999
+    },
+    "Customer": {
+      "Id": 2,
+      "Name": "Lone",
+      "Address": "BingBangvej 7",
+      "PhoneNr": "23569812",
+      "Email": "Lone@mail.dk"
+    },
+    "OrdreDate": "2022-01-20T00:00:00",
+    "Quantity": 10
   }
 ]

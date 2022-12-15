@@ -3,13 +3,13 @@
 @{
 }
 <h1>Ordres</h1>
-
+@*
 <div class="row">
     <div class="col-4"><h5>Search Id</h5></div>
     <div class="col-4"><h5>Search OrdreDate</h5></div>
     <div class="col-4"><h5>Search Quantity</h5></div>
     <div class="col-4"></div>
-</div>
+</div>*@
 
 
         <div class="col-2"></div>
@@ -68,6 +68,7 @@
                        <td>
                            @Ordre.Customer
                        </td>
+                       
                        <td>
                         <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="EditOrdre" asp-route-id="@Ordre.Id"><i class="fa fa-edit"></i></a>
                         <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="DeleteOrdre" asp-route-id="@Ordre.Id"><i class="fa fa-trash"></i></a>

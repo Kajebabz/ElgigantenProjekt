@@ -34,7 +34,7 @@ namespace Elgiganten.Pages.Ordre.DeleteOrderModel
             Models.Ordre deletedordre = _ordreService.DeleteOrdre(Ordre.Id);
             if (deletedordre == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
-            return RedirectToPage("GetAllItems");
+            return RedirectToPage("GetAllOrdres");
         }
     }
 }

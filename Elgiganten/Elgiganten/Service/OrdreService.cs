@@ -1,9 +1,6 @@
 ﻿using Elgiganten.MockData;
 using Elgiganten.Models;
-using Elgiganten.Pages.Item;
-using Microsoft.AspNetCore.Mvc;
-using System.Collections.Immutable;
-using System.Xml;
+
 
 namespace Elgiganten.Service
 {
@@ -21,11 +18,10 @@ namespace Elgiganten.Service
             Ordre.nextId = ordres[^1].Id + 1;
         }
 
-        [BindProperty] ItemService ItemServiceItemService { get; set; }
-        [BindProperty]CustomerService CustomerServicess { get; set; }
+        public OrdreService()
+        {
+        }
 
-            
-        
         public List<Ordre> GetOrdres()
         {
             return ordres;
@@ -36,10 +32,10 @@ namespace Elgiganten.Service
             ordres.Add(ordre);
             JsonOrdreFileService.SaveJsonOrdre(ordres);
         }
-      
-        
 
-     
+
+
+
         public void UpdateOrdre(Ordre ordre)
         {
             if (ordres != null)
@@ -83,12 +79,18 @@ namespace Elgiganten.Service
             }
             return OrdreToBeDeleted;
         }
-       //public Item CalculateQuantity(Ordre ordre)
-       //{
-       //     foreach (var Item in _items )
-       //     {
-                
-       //     }
-       //}
+     
+        //public Item CalculateQuantity(Item item)
+        //{
+        //    foreach (var k in ordres)
+        //    {
+        //        if (ordre.Quantity == k.Quantity)
+        //        {
+        //            double total = (ordre.Quantity * item.Price);
+        //        }
+
+        //    }
+        //    return null;
+        //}
     }
 }

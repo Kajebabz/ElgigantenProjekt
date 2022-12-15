@@ -6,33 +6,42 @@ using Elgiganten.Pages.Ordre.CreateOrderModel;
 
 namespace Elgiganten.Pages.Ordre.CreateOrderModel
 {
-   
-        public class CreateOrdreModel : PageModel
+
+    public class CreateOrdreModel : PageModel
+    {
+
+        private IOrdreService _ordreService;
+        private IItemService _itemService;
+        private ICustomerService _customerService;
+
+        public CreateOrdreModel(IOrdreService ordreService, IItemService itemService, ICustomerService customerService)
         {
+            _ordreService = ordreService;
+            _itemService = itemService;
+            _customerService = customerService;
+        }
+        [BindProperty]
+        public Models.Ordre ordre { get; set; }
+        [BindProperty]
+        public int CustomerID { get; set; }
+        [BindProperty]
+        public int ItemID { get; set; }
 
-            private IOrdreService _ordreService;
-
-            public CreateOrdreModel(IOrdreService ordreService)
-            {
-                _ordreService = ordreService;
-            }
-            [BindProperty]
-            public Models.Ordre ordre { get; set; }
-            
-
-            public IActionResult OnGet()
+        public IActionResult OnGet()
+        {
+            return Page();
+        }
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
             {
                 return Page();
             }
-            public IActionResult OnPost()
-            {
-                if (!ModelState.IsValid)
-                {
-                    return Page();
-                }
-                _ordreService.AddOrdre(ordre);
-                return RedirectToPage("GetAllOrdres");
-            }
+            ordre.Item = _itemService.GetItem(ItemID);
+            ordre.Customer = _customerService.GetCustomer(CustomerID);
+            _ordreService.AddOrdre(ordre);
+            return RedirectToPage("GetAllOrdres");
         }
-    
+    }
+
 }
