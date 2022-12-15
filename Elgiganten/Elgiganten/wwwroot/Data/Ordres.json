@@ -1,6 +1,22 @@
-﻿namespace Elgiganten.wwwroot.Data
-{
-    public class Ordre
-    {
-    }
-}
+[
+  {
+    "Id": 1,
+    "Item": {
+      "Id": 1,
+      "Type": "PC",
+      "Name": "Intel",
+      "Brand": "Vision",
+      "Description": "Kraftig computer til lav pris",
+      "Price": 10999
+    },
+    "Customer": {
+      "Id": 1,
+      "Name": "Lone",
+      "Address": "BingBangvej 7",
+      "PhoneNr": "23569812",
+      "Email": "Lone@mail.dk"
+    },
+    "OrdreDate": "2022-01-20T00:00:00",
+    "Quantity": 10
+  }
+]

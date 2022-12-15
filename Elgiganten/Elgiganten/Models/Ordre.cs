@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public Item Item { get; set; }
         public Customer Customer { get; set; }
-        public DateOnly OrdreDate { get; set; }
+        public DateTime OrdreDate { get; set; }
         public int Quantity { get; set; }
         public static int nextId = 1;
 
@@ -13,7 +13,7 @@
         {
         }
 
-        public Ordre(Item item, Customer customer, DateOnly ordreDate, int quantity)
+        public Ordre(Item item, Customer customer, DateTime ordreDate, int quantity)
         {
             Id = nextId++;
             Item = item;
