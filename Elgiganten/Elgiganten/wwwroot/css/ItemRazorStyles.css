@@ -1,6 +1,6 @@
 ﻿body {
     /* The image used */
-    background-image: url("../Elgi.jpg");
+    background-image: url("../blu.jpg");
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -16,4 +16,10 @@
 
 body {
     margin-bottom: 200px;
+}
+
+div {
+    text-align: center;
+    color:black;
+
 }

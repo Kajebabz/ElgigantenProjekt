@@ -30,7 +30,7 @@ namespace Elgiganten.Models
 
         public override string ToString()
         {
-            return $"{{{nameof(Id)}={Id.ToString()}, {nameof(Type)}={Type}, {nameof(Name)}={Name}, {nameof(Brand)}={Brand}, {nameof(Description)}={Description}, {nameof(Price)}={Price.ToString()}}}";
+            return $"Tak for din bestilling du har bestilt ID:  {Id.ToString()}, Fra {Brand}, prisen i alt {Price.ToString()} Vi håber du glade!";
         }
     }
 }
