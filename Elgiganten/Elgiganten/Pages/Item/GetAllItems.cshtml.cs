@@ -7,6 +7,7 @@ namespace Elgiganten.Pages.Item
     public class GetAllItemsModel : PageModel
     {
         [BindProperty] public string SearchString { get; set; }
+        [BindProperty] public string SearchStringType { get; set; }
         [BindProperty] public int MinPrice { get; set; }
         [BindProperty] public int MaxPrice { get; set; }
 
@@ -33,7 +34,7 @@ namespace Elgiganten.Pages.Item
         }
         public IActionResult OnPostTypeSearch()
         {
-            Items = _itemService.TypeSearch(SearchString).ToList();
+            Items = _itemService.TypeSearch(SearchStringType).ToList();
             return Page();
         }
         public IActionResult OnPostPriceFilter(int maxPrice, int minPrice = 0)
