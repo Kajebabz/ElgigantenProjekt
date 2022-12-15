@@ -110,5 +110,109 @@
     "Brand": "Apple",
     "Description": "6,7\u0022 Super Retina XDR-Sk\u00E6rm, 128 GB, A15 Bionic CPU 5G",
     "Price": 8799
+  },
+  {
+    "Id": 15,
+    "Type": "Hardware",
+    "Name": "Samsung Portable SSD T7",
+    "Brand": "Samsung",
+    "Description": "Sort ekstern SSD 1GB ",
+    "Price": 1089
+  },
+  {
+    "Id": 16,
+    "Type": "Hardware",
+    "Name": "LG Slim DVD/CD optisk drev",
+    "Brand": "LG",
+    "Description": "Eksternt DVD/CD Drev, 13,7mm slankt, USB 2",
+    "Price": 499
+  },
+  {
+    "Id": 17,
+    "Type": "Hardware",
+    "Name": "PNY 32 GB DDR4",
+    "Brand": "PNY",
+    "Description": "2x16 GB DDR4, 3200 MHz, XLR8 Gaming",
+    "Price": 1209
+  },
+  {
+    "Id": 18,
+    "Type": "Monitor",
+    "Name": "Samsung Odyssey C27G7 27\u0022",
+    "Brand": "Samsung",
+    "Description": "27\u0022, 240 hz, 2x HDMI, Displayport, USB 3",
+    "Price": 3299
+  },
+  {
+    "Id": 19,
+    "Type": "Monitor",
+    "Name": "Samsung Smart Monitor M8, 32\u0022",
+    "Brand": "Samsung",
+    "Description": "32\u0022, 4k VA-Sk\u00E6rm, Tizen OS, underholdningssystem",
+    "Price": 5999
+  },
+  {
+    "Id": 20,
+    "Type": "Monitor",
+    "Name": "LG 37,5\u0022 UltraGear Gaming Sk\u00E6rm",
+    "Brand": "LG",
+    "Description": "37,5\u0022, QHD\u002BIPS-Panel, Nvidia Gsync-kompatibel, HDMI, Displayport",
+    "Price": 9998
+  },
+  {
+    "Id": 21,
+    "Type": "PC",
+    "Name": "Acer Predator Orion 3000",
+    "Brand": "Acer",
+    "Description": "i7-12700F-Processor, Nvidia GeForce RTX 3070-Grafik, 16 GB DDR4 Ram, 1 TB SSD",
+    "Price": 11999
+  },
+  {
+    "Id": 22,
+    "Type": "PC",
+    "Name": "Lenovo Legion Gaming Computer",
+    "Brand": "Lenovo",
+    "Description": "i5-12400F-Processor, Nvidia GeForce RTX 3060-Grafik, 16 GB DDR5 Ram, 1 TB SSD",
+    "Price": 9499
+  },
+  {
+    "Id": 23,
+    "Type": "Home",
+    "Name": "Philips Airfryer XXL Premium",
+    "Brand": "Philips",
+    "Description": "1,4 KG kapacitet, Superior Rapid Airflow-teknologi",
+    "Price": 2799
+  },
+  {
+    "Id": 24,
+    "Type": "Home",
+    "Name": "Weber Genesis E-425s Gasgrill",
+    "Brand": "Weber",
+    "Description": "4 Gasblus, 66 x 47 cm grillomr\u00E5de",
+    "Price": 12999
+  },
+  {
+    "Id": 25,
+    "Type": "Tv og Lyd",
+    "Name": "Samsung B560 Soundbar med subwoofer",
+    "Brand": "Samsung",
+    "Description": "2.1ch Soundbar med subwoofer, Bass Boost, Game Mode",
+    "Price": 3499
+  },
+  {
+    "Id": 26,
+    "Type": "Tv og Lyd",
+    "Name": "JBL Bar 9.1 SoundBar",
+    "Brand": "JBL",
+    "Description": "820 watt systemkraft, Dolby Atmos, 2 wireless surroundh\u00F8jttalere, wireless subwoofer",
+    "Price": 7499
+  },
+  {
+    "Id": 27,
+    "Type": "Konsol",
+    "Name": "Nintendo Switch OLED Gaming Konsol",
+    "Brand": "Nintendo",
+    "Description": "7\u0022 OLED-Sk\u00E6rm, op til 9 timers batteri, Joy-Con bev\u00E6gelsescontrollere",
+    "Price": 3395
   }
 ]

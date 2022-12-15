@@ -30,8 +30,8 @@
   {
     "Id": 5,
     "Name": "Mads The Man",
-    "Address": "Madsensvej 24, 4550 Assens",
-    "PhoneNr": "88888888",
+    "Address": "Madsensvej 24, 4550 Asn\u00E6s",
+    "PhoneNr": "60542562",
     "Email": "MadsTheMan@yahoo.dk"
   }
 ]
