@@ -1,11 +1,13 @@
 ﻿using Elgiganten.MockData;
 using Elgiganten.Models;
+using Elgiganten.Pages.Item;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Immutable;
 using System.Xml;
 
 namespace Elgiganten.Service
 {
-    public class OrdreService
+    public class OrdreService : IOrdreService
     {
         private List<Ordre> ordres;
         private JsonOrdreFileService JsonOrdreFileService { get; set; }
@@ -16,9 +18,12 @@ namespace Elgiganten.Service
             ordres = MockData.MockOrdre.GetMockOrdres();
             //ordres = JsonOrdreFileService.GetJsonOrdres().ToList();
         }
-       
 
+        [BindProperty] ItemService ItemServiceItemService { get; set; }
+        [BindProperty]CustomerService CustomerServicess { get; set; }
 
+            
+        
         public List<Ordre> GetOrdres()
         {
             return ordres;
@@ -75,6 +80,12 @@ namespace Elgiganten.Service
             }
             return OrdreToBeDeleted;
         }
-
+       //public Item CalculateQuantity(Ordre ordre)
+       //{
+       //     foreach (var Item in _items )
+       //     {
+                
+       //     }
+       //}
     }
 }

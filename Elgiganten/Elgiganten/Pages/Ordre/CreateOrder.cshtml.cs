@@ -10,16 +10,15 @@ namespace Elgiganten.Pages.Ordre.CreateOrderModel
         public class CreateOrdreModel : PageModel
         {
 
-            private OrdreService _ordreService;
+            private IOrdreService _ordreService;
 
-            public CreateOrdreModel(OrdreService ordreService)
+            public CreateOrdreModel(IOrdreService ordreService)
             {
                 _ordreService = ordreService;
             }
-
             [BindProperty]
             public Models.Ordre ordre { get; set; }
-
+            
 
             public IActionResult OnGet()
             {

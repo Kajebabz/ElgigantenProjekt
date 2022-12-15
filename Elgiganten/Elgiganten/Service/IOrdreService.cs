@@ -1,4 +1,5 @@
 ﻿using Elgiganten.Models;
+using Elgiganten.Pages.Ordre;
 
 namespace Elgiganten.Service
 {

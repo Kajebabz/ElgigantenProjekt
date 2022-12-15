@@ -41,6 +41,10 @@ namespace Elgiganten.Models
                 PhoneNr = phoneNr;
                 Email = email;
             }
-        
+
+        public override string ToString()
+        {
+            return $"{{{nameof(Id)}={Id.ToString()}, {nameof(Name)}={Name}, {nameof(Address)}={Address}, {nameof(PhoneNr)}={PhoneNr}, {nameof(Email)}={Email}}}";
+        }
     }
 }

@@ -9,16 +9,17 @@ namespace Elgiganten.Pages.Ordre.DeleteOrderModel
     {
       
             
-        private OrdreService _ordreService;
+        private IOrdreService _ordreService;
 
         [BindProperty]
         public Models.Ordre Ordre { get; set; }
 
-        public DeleteOrdreModel(OrdreService ordreService)
+        public DeleteOrdreModel(IOrdreService ordreService)
         {
             _ordreService = ordreService;
         }
 
+        
         public IActionResult OnGet(int id)
         {
             Ordre = _ordreService.GetOrdre(id);

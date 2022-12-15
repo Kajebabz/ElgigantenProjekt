@@ -26,5 +26,10 @@ namespace Elgiganten.Models
             Description = description;
             Price = price;
         }
+
+        public override string ToString()
+        {
+            return $"{{{nameof(Id)}={Id.ToString()}, {nameof(Type)}={Type}, {nameof(Name)}={Name}, {nameof(Brand)}={Brand}, {nameof(Description)}={Description}, {nameof(Price)}={Price.ToString()}}}";
+        }
     }
 }

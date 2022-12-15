@@ -15,15 +15,14 @@
         <div class="col-2"></div>
     </div>
 
-    <table class="table table-bordered table-hover table-opacity" width="50%">
+    <table class="table table-bordered table-hover, table- " width="100%">
         <colgroup>
-            <col style="width : 4%">
             <col style="width : 10%">
-            <col style="width : 15%">
             <col style="width : 10%">
-            <col style="width : 41%">
-            <col style="width : 8%">
-            <col style="width : 8%">
+            <col style="width : 10%">
+            <col style="width : 30%">
+            <col style="width : 30%">
+            <col style="width : 10%">
         </colgroup>
         <thead>
             <tr class="btn-secondary active">
@@ -43,8 +42,9 @@
                     Customer
                 </th>
                 <th>
-                    TotalPrice
+                    Actions
                 </th>
+              
             </tr>
         </thead>
         <tbody>
@@ -57,10 +57,20 @@
                            @Ordre.Id
                        </td>
                        <td>
+                           @Ordre.OrdreDate
+                       </td>
+                       <td>
                            @Ordre.Quantity
                        </td>
                        <td>
-                           @Ordre.OrdreDate
+                           @Ordre.Item
+                       </td>
+                       <td>
+                           @Ordre.Customer
+                       </td>
+                       <td>
+                        <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="EditOrdre" asp-route-id="@Ordre.Id"><i class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="DeleteOrdre" asp-route-id="@Ordre.Id"><i class="fa fa-trash"></i></a>
                        </td>
                    </tr>
                 }

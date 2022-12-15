@@ -8,9 +8,9 @@ namespace Elgiganten.Pages.Ordre
     {
        
 
-        private OrdreService _ordreService;
+        private IOrdreService _ordreService;
 
-        public GetAllOrdresModel(OrdreService ordreService)
+        public GetAllOrdresModel(IOrdreService ordreService)
         {
             _ordreService = ordreService;
         }
