@@ -13,9 +13,5 @@ namespace Elgiganten.Service
         IEnumerable<Item> NameSearch(string str);
         IEnumerable<Item> TypeSearch(string str);
         IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0);
-
-
-
     }
-
 }
