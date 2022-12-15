@@ -1,4 +1,7 @@
-﻿namespace Elgiganten.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
+
+namespace Elgiganten.Models
 {
     public class Ordre
     {
@@ -7,6 +10,7 @@
         public Customer Customer { get; set; }
         public DateTime OrdreDate { get; set; }
         public int Quantity { get; set; }
+
         public static int nextId = 1;
 
         public Ordre()
