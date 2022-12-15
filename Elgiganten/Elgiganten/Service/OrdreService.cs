@@ -17,6 +17,7 @@ namespace Elgiganten.Service
             JsonOrdreFileService = jsonOrdreFileService;
             ordres = MockData.MockOrdre.GetMockOrdres();
             //ordres = JsonOrdreFileService.GetJsonOrdres().ToList();
+            Ordre.nextId = ordres[^1].Id + 1;
         }
 
         [BindProperty] ItemService ItemServiceItemService { get; set; }
@@ -30,6 +31,7 @@ namespace Elgiganten.Service
         }
         public void AddOrdre(Ordre ordre)
         {
+            ordre.Id = Ordre.nextId++;
             ordres.Add(ordre);
             JsonOrdreFileService.SaveJsonOrdre(ordres);
         }
