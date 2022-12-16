@@ -27,7 +27,7 @@ namespace Elgiganten.Models
             Description = description;
             Price = price;
         }
-
+        
         public override string ToString()
         {
             return $"Tak for din bestilling! Du har bestilt vare Nr: {Id.ToString()}  -  En: {Name}";

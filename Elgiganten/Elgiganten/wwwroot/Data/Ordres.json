@@ -118,5 +118,25 @@
     },
     "OrdreDate": "2022-09-01T10:08:00",
     "Quantity": 4
+  },
+  {
+    "Id": 7,
+    "Item": {
+      "Id": 2,
+      "Type": "Monitor",
+      "Name": "Dell UltraSharp 27, 4k",
+      "Brand": "Dell",
+      "Description": "Super fast 4k 160hz Monitor",
+      "Price": 2999
+    },
+    "Customer": {
+      "Id": 4,
+      "Name": "Hassan Ceran",
+      "Address": "Drosselvej 53, 2635 Ish\u00F8j",
+      "PhoneNr": "42069016",
+      "Email": "HassanCeran2@mail.dk"
+    },
+    "OrdreDate": "0001-01-01T00:00:00",
+    "Quantity": 5
   }
 ]

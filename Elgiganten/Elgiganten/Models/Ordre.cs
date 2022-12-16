@@ -29,5 +29,9 @@ namespace Elgiganten.Models
            
 
         }
+        public double GetTotal()
+        {
+            return this.Item.Price * this.Quantity;
+        }
     }
 }

@@ -14,14 +14,15 @@
 
         <div class="col-2"></div>
 
- <table class="table table-bordered table-hover table-opacity" width="50%">
+ <table class="table table-bordered table-hover table-opacity" width="75%">
         <colgroup>
-            <col style="width : 10%">
-            <col style="width : 10%">
-            <col style="width : 10%">
+            <col style="width : 3%">
+            <col style="width : 8%">
+            <col style="width : 21%">
             <col style="width : 30%">
-            <col style="width : 30%">
-            <col style="width : 10%">
+            <col style="width : 6%">
+            <col style="width : 5%">
+            <col style="width : 7%">
         </colgroup>
         <thead>
             <tr class="btn-secondary active">
@@ -32,13 +33,16 @@
                     OrdreDate
                 </th>
                 <th>
-                    Quantity
-                </th>
-                <th>
                     Item
                 </th>
                 <th>
                     Customer
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    TotalPrice
                 </th>
                 <th>
                     Actions
@@ -59,15 +63,17 @@
                            @Ordre.OrdreDate
                        </td>
                        <td>
-                           @Ordre.Quantity
-                       </td>
-                       <td>
                            @Ordre.Item
                        </td>
                        <td>
                            @Ordre.Customer
                        </td>
-                       
+                       <td>
+                           @Ordre.Quantity
+                       </td>
+                       <td>
+                           @Ordre.GetTotal()
+                       </td>
                        <td>
                         <a class="btn btn-primary btn-sm" type="button" title="Edit" asp-page="EditOrdre" asp-route-id="@Ordre.Id"><i class="fa fa-edit"></i></a>
                         <a class="btn btn-danger btn-sm " type="button" title="Delete" asp-page="DeleteOrdre" asp-route-id="@Ordre.Id"><i class="fa fa-trash"></i></a>
