@@ -194,7 +194,7 @@
   {
     "Id": 25,
     "Type": "Tv og Lyd",
-    "Name": "Samsung B560 Soundbar med subwoofer",
+    "Name": "Samsung B560 Soundbar ",
     "Brand": "Samsung",
     "Description": "2.1ch Soundbar med subwoofer, Bass Boost, Game Mode",
     "Price": 3499
@@ -214,5 +214,13 @@
     "Brand": "Nintendo",
     "Description": "7\u0022 OLED-Sk\u00E6rm, op til 9 timers batteri, Joy-Con bev\u00E6gelsescontrollere",
     "Price": 3395
+  },
+  {
+    "Id": 28,
+    "Type": "Tv og Lyd",
+    "Name": "Samsung Q950 Soundbar",
+    "Brand": "Samsung",
+    "Description": "9.1,4 surroundsound, Dolby Atmos",
+    "Price": 12000
   }
 ]

@@ -3,7 +3,7 @@
     "Id": 1,
     "Name": "Lone Petersen",
     "Address": "BingBangvej 7, 5000 Odense",
-    "PhoneNr": "23569812",
+    "PhoneNr": "55667354",
     "Email": "LonePetersen142@mail.dk"
   },
   {
@@ -96,12 +96,5 @@
     "Address": "Tv\u00E6rgyden 87, 9270 Klarup",
     "PhoneNr": "12340987",
     "Email": "Pernille87Winther@MailCD.dk"
-  },
-  {
-    "Id": 15,
-    "Name": "Emma Mortensen",
-    "Address": "Svinget 63, 4735 Mern",
-    "PhoneNr": "90806524",
-    "Email": "EmmaMortensen@outlook.dk"
   }
 ]
