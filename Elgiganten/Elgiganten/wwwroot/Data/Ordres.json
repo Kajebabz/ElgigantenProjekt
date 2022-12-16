@@ -2,7 +2,7 @@
   {
     "Id": 1,
     "Item": {
-      "Id": 1,
+      "Id": 28,
       "Type": "PC",
       "Name": "Intel",
       "Brand": "Vision",
@@ -10,7 +10,27 @@
       "Price": 10999
     },
     "Customer": {
-      "Id": 1,
+      "Id": 6,
+      "Name": "Lone",
+      "Address": "BingBangvej 7",
+      "PhoneNr": "23569812",
+      "Email": "Lone@mail.dk"
+    },
+    "OrdreDate": "0001-01-01T00:00:00",
+    "Quantity": 2
+  },
+  {
+    "Id": 2,
+    "Item": {
+      "Id": 29,
+      "Type": "PC",
+      "Name": "Intel",
+      "Brand": "Vision",
+      "Description": "Kraftig computer til lav pris",
+      "Price": 10999
+    },
+    "Customer": {
+      "Id": 7,
       "Name": "Lone",
       "Address": "BingBangvej 7",
       "PhoneNr": "23569812",
@@ -20,23 +40,103 @@
     "Quantity": 10
   },
   {
-    "Id": 2,
+    "Id": 3,
     "Item": {
-      "Id": 2,
+      "Id": 8,
+      "Type": "Tv og Lyd",
+      "Name": "Q60b",
+      "Brand": "Samsung",
+      "Description": "Samsung serie 6 qled tv",
+      "Price": 3999
+    },
+    "Customer": {
+      "Id": 4,
+      "Name": "Hassan",
+      "Address": "N\u00E6ver",
+      "PhoneNr": "42069016",
+      "Email": "Hassan2@mail.dk"
+    },
+    "OrdreDate": "2022-12-17T12:18:00",
+    "Quantity": 5
+  },
+  {
+    "Id": 5,
+    "Item": {
+      "Id": 1,
       "Type": "PC",
-      "Name": "Intel",
+      "Name": "Vision XForce Silent",
       "Brand": "Vision",
       "Description": "Kraftig computer til lav pris",
       "Price": 10999
     },
     "Customer": {
       "Id": 2,
+      "Name": "Hans",
+      "Address": "Langvej 2",
+      "PhoneNr": "12345678",
+      "Email": "Hans@mail.dk"
+    },
+    "OrdreDate": "2022-12-04T09:34:00",
+    "Quantity": 2
+  },
+  {
+    "Id": 6,
+    "Item": {
+      "Id": 3,
+      "Type": "Hardware",
+      "Name": "RTX 3090",
+      "Brand": "ASUS",
+      "Description": "Mest kr\u00E6ftfulde grafikkort p\u00E5 markedet",
+      "Price": 6999
+    },
+    "Customer": {
+      "Id": 3,
+      "Name": "Birthe",
+      "Address": "Lillevej 67",
+      "PhoneNr": "89456719",
+      "Email": "Birthe@mail.dk"
+    },
+    "OrdreDate": "2023-01-12T09:34:00",
+    "Quantity": 5
+  },
+  {
+    "Id": 7,
+    "Item": {
+      "Id": 1,
+      "Type": "PC",
+      "Name": "Vision XForce Silent",
+      "Brand": "Vision",
+      "Description": "Kraftig computer til lav pris",
+      "Price": 10999
+    },
+    "Customer": {
+      "Id": 1,
       "Name": "Lone",
       "Address": "BingBangvej 7",
       "PhoneNr": "23569812",
       "Email": "Lone@mail.dk"
     },
-    "OrdreDate": "2022-01-20T00:00:00",
-    "Quantity": 10
+    "OrdreDate": "2022-12-18T09:52:00",
+    "Quantity": 2
+  },
+  {
+    "Id": 8,
+    "Item": {
+      "Id": 3,
+      "Type": "Hardware",
+      "Name": "RTX 3090",
+      "Brand": "ASUS",
+      "Description": "Mest kr\u00E6ftfulde grafikkort p\u00E5 markedet",
+      "Price": 6999
+    },
+    "Customer": {
+      "Id": 3,
+      "Name": "Birthe",
+      "Address": "Lillevej 67",
+      "PhoneNr": "89456719",
+      "Email": "Birthe@mail.dk"
+    },
+    "OrdreDate": "2022-12-31T09:57:00",
+    "Quantity": 4
   }
 ]

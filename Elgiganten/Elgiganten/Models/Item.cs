@@ -30,7 +30,7 @@ namespace Elgiganten.Models
 
         public override string ToString()
         {
-            return $"Tak for din bestilling du har bestilt ID:  {Id.ToString()}, Fra {Brand}, prisen i alt {Price.ToString()} Vi håber du glade!";
+            return $"Tak for din bestilling! Du har bestilt vare Nr: {Id.ToString()}  -  En: {Name}";
         }
     }
 }

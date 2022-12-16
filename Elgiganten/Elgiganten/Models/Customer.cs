@@ -46,7 +46,7 @@ namespace Elgiganten.Models
 
         public override string ToString()
         {
-            return $"Hej! du er Kunde ID nr {Id.ToString()}, Din adresse er {Address} Telefon-Nummer {PhoneNr} Mailen er {Email} Tak for din tid!";
+            return $"Du Har KundeID: {Id.ToString()}, Adresse: {Address} Telefon-Nummer: {PhoneNr} Email: {Email}";
         }
     }
 }

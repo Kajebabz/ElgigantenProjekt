@@ -12,9 +12,9 @@ namespace Elgiganten.Service
         public OrdreService(JsonOrdreFileService jsonOrdreFileService)
         {
             JsonOrdreFileService = jsonOrdreFileService;
-            ordres = MockData.MockOrdre.GetMockOrdres();
-            jsonOrdreFileService.SaveJsonOrdre(ordres);
-            //ordres = JsonOrdreFileService.GetJsonOrdres().ToList();
+            //ordres = MockData.MockOrdre.GetMockOrdres();
+            //jsonOrdreFileService.SaveJsonOrdre(ordres);
+            ordres = JsonOrdreFileService.GetJsonOrdres().ToList();
             Ordre.nextId = ordres[^1].Id + 1;
         }
 

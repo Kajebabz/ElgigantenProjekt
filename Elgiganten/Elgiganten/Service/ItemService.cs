@@ -10,7 +10,7 @@ namespace Elgiganten.Service
 
         public ItemService(JsonFileItemService jsonFileItemService)
         {
-            JsonFileItemService = jsonFileItemService;
+             JsonFileItemService = jsonFileItemService;
              // items = MockData.MockItems.GetMockItems();
              items = JsonFileItemService.GetJsonItems().ToList();
              Item.nextId = items[^1].Id + 1;

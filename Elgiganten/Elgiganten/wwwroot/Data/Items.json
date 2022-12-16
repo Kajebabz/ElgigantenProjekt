@@ -2,7 +2,7 @@
   {
     "Id": 1,
     "Type": "PC",
-    "Name": "Intel",
+    "Name": "Vision XForce Silent",
     "Brand": "Vision",
     "Description": "Kraftig computer til lav pris",
     "Price": 10999
@@ -42,7 +42,7 @@
   {
     "Id": 6,
     "Type": "Home",
-    "Name": "V15",
+    "Name": "Dyson St\u00F8vsuger V15",
     "Brand": "Dyson",
     "Description": "Dysons mest kr\u00E6ftfulde ledningsfrie st\u00F8vsuger ",
     "Price": 5590
@@ -58,7 +58,7 @@
   {
     "Id": 8,
     "Type": "Tv og Lyd",
-    "Name": "Q60b",
+    "Name": "Samsung TV Q60b",
     "Brand": "Samsung",
     "Description": "Samsung serie 6 qled tv",
     "Price": 3999
@@ -66,7 +66,7 @@
   {
     "Id": 9,
     "Type": "Tv og Lyd",
-    "Name": "q70B",
+    "Name": "Samsung TV q70B",
     "Brand": "Samsung",
     "Description": "Samsungs 120hz serie 7 qled tv",
     "Price": 6000
