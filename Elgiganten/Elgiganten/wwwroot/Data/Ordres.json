@@ -2,46 +2,6 @@
   {
     "Id": 1,
     "Item": {
-      "Id": 28,
-      "Type": "PC",
-      "Name": "Intel",
-      "Brand": "Vision",
-      "Description": "Kraftig computer til lav pris",
-      "Price": 10999
-    },
-    "Customer": {
-      "Id": 6,
-      "Name": "Lone",
-      "Address": "BingBangvej 7",
-      "PhoneNr": "23569812",
-      "Email": "Lone@mail.dk"
-    },
-    "OrdreDate": "0001-01-01T00:00:00",
-    "Quantity": 2
-  },
-  {
-    "Id": 2,
-    "Item": {
-      "Id": 29,
-      "Type": "PC",
-      "Name": "Intel",
-      "Brand": "Vision",
-      "Description": "Kraftig computer til lav pris",
-      "Price": 10999
-    },
-    "Customer": {
-      "Id": 7,
-      "Name": "Lone",
-      "Address": "BingBangvej 7",
-      "PhoneNr": "23569812",
-      "Email": "Lone@mail.dk"
-    },
-    "OrdreDate": "2022-01-20T00:00:00",
-    "Quantity": 10
-  },
-  {
-    "Id": 3,
-    "Item": {
       "Id": 8,
       "Type": "Tv og Lyd",
       "Name": "Q60b",
@@ -60,7 +20,7 @@
     "Quantity": 5
   },
   {
-    "Id": 5,
+    "Id": 2,
     "Item": {
       "Id": 1,
       "Type": "PC",
@@ -80,7 +40,7 @@
     "Quantity": 2
   },
   {
-    "Id": 6,
+    "Id": 3,
     "Item": {
       "Id": 3,
       "Type": "Hardware",
@@ -100,7 +60,7 @@
     "Quantity": 5
   },
   {
-    "Id": 7,
+    "Id": 4,
     "Item": {
       "Id": 1,
       "Type": "PC",
@@ -120,7 +80,7 @@
     "Quantity": 2
   },
   {
-    "Id": 8,
+    "Id": 5,
     "Item": {
       "Id": 3,
       "Type": "Hardware",
@@ -137,6 +97,26 @@
       "Email": "Birthe@mail.dk"
     },
     "OrdreDate": "2022-12-31T09:57:00",
+    "Quantity": 4
+  },
+  {
+    "Id": 6,
+    "Item": {
+      "Id": 18,
+      "Type": "Monitor",
+      "Name": "Samsung Odyssey C27G7 27\u0022",
+      "Brand": "Samsung",
+      "Description": "27\u0022, 240 hz, 2x HDMI, Displayport, USB 3",
+      "Price": 3299
+    },
+    "Customer": {
+      "Id": 6,
+      "Name": "Jens Grahamsen",
+      "Address": "Vikingevej 42, st tv, 4000 Roskilde",
+      "PhoneNr": "63605319",
+      "Email": "GrahamJens@hotmail.com"
+    },
+    "OrdreDate": "2022-09-01T10:08:00",
     "Quantity": 4
   }
 ]
