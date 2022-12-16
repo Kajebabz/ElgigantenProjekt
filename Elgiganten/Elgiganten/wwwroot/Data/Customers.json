@@ -1,31 +1,31 @@
 [
   {
     "Id": 1,
-    "Name": "Lone",
-    "Address": "BingBangvej 7",
+    "Name": "Lone Petersen",
+    "Address": "BingBangvej 7, 5000 Odense",
     "PhoneNr": "23569812",
-    "Email": "Lone@mail.dk"
+    "Email": "LonePetersen142@mail.dk"
   },
   {
     "Id": 2,
-    "Name": "Hans",
-    "Address": "Langvej 2",
-    "PhoneNr": "12345678",
-    "Email": "Hans@mail.dk"
+    "Name": "Hans Pilgaard",
+    "Address": "Langvej 2, 4300 Holb\u00E6k",
+    "PhoneNr": "52426789",
+    "Email": "HansPilgaard52@mail.dk"
   },
   {
     "Id": 3,
-    "Name": "Birthe",
-    "Address": "Lillevej 67",
+    "Name": "Birthe Hansen",
+    "Address": "Lillevej 67, 4000 Roskilde",
     "PhoneNr": "89456719",
-    "Email": "Birthe@mail.dk"
+    "Email": "BirtheHan6@mail.dk"
   },
   {
     "Id": 4,
-    "Name": "Hassan",
-    "Address": "N\u00E6ver",
+    "Name": "Hassan Ceran",
+    "Address": "Drosselvej 53, 2635 Ish\u00F8j",
     "PhoneNr": "42069016",
-    "Email": "Hassan2@mail.dk"
+    "Email": "HassanCeran2@mail.dk"
   },
   {
     "Id": 5,
@@ -33,5 +33,12 @@
     "Address": "Madsensvej 24, 4550 Asn\u00E6s",
     "PhoneNr": "60542562",
     "Email": "MadsTheMan@yahoo.dk"
+  },
+  {
+    "Id": 6,
+    "Name": "Jens Grahamsen",
+    "Address": "Vikingevej 42, st tv, 4000 Roskilde",
+    "PhoneNr": "63605319",
+    "Email": "GrahamJens@hotmail.com"
   }
 ]
