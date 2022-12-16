@@ -138,5 +138,25 @@
     },
     "OrdreDate": "2022-12-31T09:57:00",
     "Quantity": 4
+  },
+  {
+    "Id": 9,
+    "Item": {
+      "Id": 3,
+      "Type": "Hardware",
+      "Name": "RTX 3090",
+      "Brand": "ASUS",
+      "Description": "Mest kr\u00E6ftfulde grafikkort p\u00E5 markedet",
+      "Price": 6999
+    },
+    "Customer": {
+      "Id": 5,
+      "Name": "Mads The Man",
+      "Address": "Madsensvej 24, 4550 Asn\u00E6s",
+      "PhoneNr": "60542562",
+      "Email": "MadsTheMan@yahoo.dk"
+    },
+    "OrdreDate": "2022-12-01T19:14:00",
+    "Quantity": 4
   }
 ]
