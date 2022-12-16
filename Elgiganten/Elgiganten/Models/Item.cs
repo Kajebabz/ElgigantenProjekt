@@ -5,7 +5,6 @@ namespace Elgiganten.Models
 {
     public class Item
     {
-
         public int Id { get; set; }
         public string Type { get; set; }
         public string Name { get; set; }
@@ -13,18 +12,25 @@ namespace Elgiganten.Models
         public string Description { get; set; }
         public double Price { get; set; }
 
+        public static int nextId = 1;
+
         public Item()
         {
         }
 
-        public Item(int id, string type, string name, string brand, string description, double price)
+        public Item(string type, string name, string brand, string description, double price)
         {
-            Id = id;
+            Id = nextId++;
             Type = type;
             Name = name;
             Brand = brand;
             Description = description;
             Price = price;
+        }
+
+        public override string ToString()
+        {
+            return $"Tak for din bestilling! Du har bestilt vare Nr: {Id.ToString()}  -  En: {Name}";
         }
     }
 }

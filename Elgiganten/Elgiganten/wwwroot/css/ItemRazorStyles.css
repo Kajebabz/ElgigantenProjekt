@@ -1,6 +1,6 @@
 ﻿body {
     /* The image used */
-    background-image: url("../Elgi.jpg");
+    background-image: url("../blu.jpg");
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -10,10 +10,16 @@
 }
 
 .table-opacity {
-    background-color: #ffffff;
+    background-color: #9c9393;
     opacity: 0.9;
 }
 
 body {
     margin-bottom: 200px;
+}
+
+div {
+    text-align: center;
+    color:black;
+
 }

@@ -1,14 +1,19 @@
 using Elgiganten.Models;
 using Elgiganten.Service;
+using Elgiganten.MockData;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IItemService, ItemService>();
-builder.Services.AddSingleton<ICustomerService, CustomerService>(); //NEEDS WORK!!!!!!!!!!!!!!!!!!!!
+builder.Services.AddSingleton<ICustomerService, CustomerService>();
+builder.Services.AddSingleton<IOrdreService, OrdreService>();
+//NEEDS WORK!!!!!!!!!!!!!!!!!!!!
 builder.Services.AddTransient<JsonFileItemService>();
 builder.Services.AddTransient<JsonFileCustomerService>();
+builder.Services.AddTransient<JsonOrdreFileService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

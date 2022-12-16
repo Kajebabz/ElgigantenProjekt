@@ -1,0 +1,38 @@
+﻿@page
+@model Elgiganten.Pages.Ordre.EditOrdreModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="ordre.Id"></label>
+        <input asp-for="ordre.Id" class="form-control" />
+        <span asp-validation-for="ordre.Id" class="text-danger" readonly></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ordre.Item"></label>
+        <input asp-for="ordre.Item" class="form-control" />
+        <span asp-validation-for="ordre.Item" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ordre.Customer"></label>
+        <input asp-for="ordre.Customer" class="form-control" />
+        <span asp-validation-for="ordre.Customer" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ordre.Quantity"></label>
+        <input asp-for="ordre.Quantity" class="form-control" />
+        <span asp-validation-for="ordre.Quantity" class="text-danger"></span>
+    </div>
+
+
+    <p>
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary" />
+        </div>
+    </p>
+</form>
+
+<p>
+    <a asp-page="/Ordre/GetAllOrdres">Back to List</a>
+</p>

@@ -2,41 +2,217 @@
   {
     "Id": 1,
     "Type": "PC",
-    "Name": "Intel",
+    "Name": "Vision XForce Silent",
     "Brand": "Vision",
     "Description": "Kraftig computer til lav pris",
-    "Price": 10.999
+    "Price": 10999
   },
   {
     "Id": 2,
     "Type": "Monitor",
-    "Name": "BenQ Sk\u00E6rm",
-    "Brand": "BenQ",
-    "Description": "4k qled",
+    "Name": "Dell UltraSharp 27, 4k",
+    "Brand": "Dell",
+    "Description": "Super fast 4k 160hz Monitor",
     "Price": 2999
   },
   {
     "Id": 3,
     "Type": "Hardware",
-    "Name": "Tastatur",
-    "Brand": "Steelseries",
-    "Description": "qwerty apex, mekanisk",
-    "Price": 999
+    "Name": "RTX 3090",
+    "Brand": "ASUS",
+    "Description": "Mest kr\u00E6ftfulde grafikkort p\u00E5 markedet",
+    "Price": 6999
   },
   {
     "Id": 4,
     "Type": "Hardware",
-    "Name": "Mus",
-    "Brand": "Steelseries",
-    "Description": "8 knapper, 10000 dpi",
-    "Price": 299
+    "Name": "GeForce RTX 3060 Ti",
+    "Brand": "ASUS",
+    "Description": "Mest kr\u00E6ftfulde grafikkort der findes",
+    "Price": 3999
   },
   {
     "Id": 5,
-    "Type": "Monitor",
-    "Name": "Samsung Sk\u00E6rm",
+    "Type": "Konsol",
+    "Name": "Playstation 5",
+    "Brand": "Sony",
+    "Description": "Den nyeste playstation ",
+    "Price": 4999
+  },
+  {
+    "Id": 6,
+    "Type": "Home",
+    "Name": "Dyson St\u00F8vsuger V15",
+    "Brand": "Dyson",
+    "Description": "Dysons mest kr\u00E6ftfulde ledningsfrie st\u00F8vsuger ",
+    "Price": 5590
+  },
+  {
+    "Id": 7,
+    "Type": "Konsol",
+    "Name": "Xbox series x",
+    "Brand": "Microsoft",
+    "Description": "Mest kr\u00E6ftfulde xbox",
+    "Price": 4999
+  },
+  {
+    "Id": 8,
+    "Type": "Tv og Lyd",
+    "Name": "Samsung TV Q60b",
     "Brand": "Samsung",
-    "Description": "Fin hurtig 144hz sk\u00E6rm",
-    "Price": 2199
+    "Description": "Samsung serie 6 qled tv",
+    "Price": 3999
+  },
+  {
+    "Id": 9,
+    "Type": "Tv og Lyd",
+    "Name": "Samsung TV q70B",
+    "Brand": "Samsung",
+    "Description": "Samsungs 120hz serie 7 qled tv",
+    "Price": 6000
+  },
+  {
+    "Id": 10,
+    "Type": "Mobil og Tablet",
+    "Name": "iPad 10,2\u0022 (2021) 64 GB ",
+    "Brand": "Apple",
+    "Description": "iPad 10,2\u0022 Retina sk\u00E6rm, A13 Bionic processor",
+    "Price": 2888
+  },
+  {
+    "Id": 11,
+    "Type": "Mobil og Tablet",
+    "Name": "iPad Pro 11\u0022 256 GB",
+    "Brand": "Apple",
+    "Description": "iPad 11\u0022 Liquid Retina XDR-Sk\u00E6rm, FaceID, LiDAR Scanner",
+    "Price": 8999
+  },
+  {
+    "Id": 12,
+    "Type": "Mobil og Tablet",
+    "Name": "Samsung Galaxy S22",
+    "Brand": "Samsung",
+    "Description": "6,1\u0022 Infinity-O 120hz touchsk\u00E6rm, 128 GB",
+    "Price": 6699
+  },
+  {
+    "Id": 13,
+    "Type": "Mobil og Tablet",
+    "Name": "Sony Xperia 10 IV",
+    "Brand": "Sony",
+    "Description": "6,0\u0022 FHD\u002B OLED-Touchsk\u00E6rm, 128 GB, 12\u002B8\u002B8 MP Triplekamera",
+    "Price": 3999
+  },
+  {
+    "Id": 14,
+    "Type": "Mobil og Tablet",
+    "Name": "iPhone 14 Plus",
+    "Brand": "Apple",
+    "Description": "6,7\u0022 Super Retina XDR-Sk\u00E6rm, 128 GB, A15 Bionic CPU 5G",
+    "Price": 8799
+  },
+  {
+    "Id": 15,
+    "Type": "Hardware",
+    "Name": "Samsung Portable SSD T7",
+    "Brand": "Samsung",
+    "Description": "Sort ekstern SSD 1GB ",
+    "Price": 1089
+  },
+  {
+    "Id": 16,
+    "Type": "Hardware",
+    "Name": "LG Slim DVD/CD optisk drev",
+    "Brand": "LG",
+    "Description": "Eksternt DVD/CD Drev, 13,7mm slankt, USB 2",
+    "Price": 499
+  },
+  {
+    "Id": 17,
+    "Type": "Hardware",
+    "Name": "PNY 32 GB DDR4",
+    "Brand": "PNY",
+    "Description": "2x16 GB DDR4, 3200 MHz, XLR8 Gaming",
+    "Price": 1209
+  },
+  {
+    "Id": 18,
+    "Type": "Monitor",
+    "Name": "Samsung Odyssey C27G7 27\u0022",
+    "Brand": "Samsung",
+    "Description": "27\u0022, 240 hz, 2x HDMI, Displayport, USB 3",
+    "Price": 3299
+  },
+  {
+    "Id": 19,
+    "Type": "Monitor",
+    "Name": "Samsung Smart Monitor M8, 32\u0022",
+    "Brand": "Samsung",
+    "Description": "32\u0022, 4k VA-Sk\u00E6rm, Tizen OS, underholdningssystem",
+    "Price": 5999
+  },
+  {
+    "Id": 20,
+    "Type": "Monitor",
+    "Name": "LG 37,5\u0022 UltraGear Gaming Sk\u00E6rm",
+    "Brand": "LG",
+    "Description": "37,5\u0022, QHD\u002BIPS-Panel, Nvidia Gsync-kompatibel, HDMI, Displayport",
+    "Price": 9998
+  },
+  {
+    "Id": 21,
+    "Type": "PC",
+    "Name": "Acer Predator Orion 3000",
+    "Brand": "Acer",
+    "Description": "i7-12700F-Processor, Nvidia GeForce RTX 3070-Grafik, 16 GB DDR4 Ram, 1 TB SSD",
+    "Price": 11999
+  },
+  {
+    "Id": 22,
+    "Type": "PC",
+    "Name": "Lenovo Legion Gaming Computer",
+    "Brand": "Lenovo",
+    "Description": "i5-12400F-Processor, Nvidia GeForce RTX 3060-Grafik, 16 GB DDR5 Ram, 1 TB SSD",
+    "Price": 9499
+  },
+  {
+    "Id": 23,
+    "Type": "Home",
+    "Name": "Philips Airfryer XXL Premium",
+    "Brand": "Philips",
+    "Description": "1,4 KG kapacitet, Superior Rapid Airflow-teknologi",
+    "Price": 2799
+  },
+  {
+    "Id": 24,
+    "Type": "Home",
+    "Name": "Weber Genesis E-425s Gasgrill",
+    "Brand": "Weber",
+    "Description": "4 Gasblus, 66 x 47 cm grillomr\u00E5de",
+    "Price": 12999
+  },
+  {
+    "Id": 25,
+    "Type": "Tv og Lyd",
+    "Name": "Samsung B560 Soundbar med subwoofer",
+    "Brand": "Samsung",
+    "Description": "2.1ch Soundbar med subwoofer, Bass Boost, Game Mode",
+    "Price": 3499
+  },
+  {
+    "Id": 26,
+    "Type": "Tv og Lyd",
+    "Name": "JBL Bar 9.1 SoundBar",
+    "Brand": "JBL",
+    "Description": "820 watt systemkraft, Dolby Atmos, 2 wireless surroundh\u00F8jttalere, wireless subwoofer",
+    "Price": 7499
+  },
+  {
+    "Id": 27,
+    "Type": "Konsol",
+    "Name": "Nintendo Switch OLED Gaming Konsol",
+    "Brand": "Nintendo",
+    "Description": "7\u0022 OLED-Sk\u00E6rm, op til 9 timers batteri, Joy-Con bev\u00E6gelsescontrollere",
+    "Price": 3395
   }
 ]

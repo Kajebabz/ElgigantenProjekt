@@ -14,6 +14,7 @@ namespace Elgiganten.Service
             JsonFileCustomerService = jsonFileCustomerService;
             //customers = MockCustomers.GetMockCustomers();
             customers = jsonFileCustomerService.GetJsonCustomers().ToList();
+            Customer.nextId = customers[^1].Id + 1;
         }
 
         public List<Customer> GetCustomers()
@@ -23,6 +24,7 @@ namespace Elgiganten.Service
 
         public void AddCustomer(Customer customer)
         {
+            customer.Id = Customer.nextId++;
             customers.Add(customer);
             JsonFileCustomerService.SaveJsonCustomers(customers);
         }

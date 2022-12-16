@@ -10,9 +10,10 @@ namespace Elgiganten.Service
 
         public ItemService(JsonFileItemService jsonFileItemService)
         {
-            JsonFileItemService = jsonFileItemService;
+             JsonFileItemService = jsonFileItemService;
              // items = MockData.MockItems.GetMockItems();
              items = JsonFileItemService.GetJsonItems().ToList();
+             Item.nextId = items[^1].Id + 1;
         }
 
 
@@ -22,6 +23,7 @@ namespace Elgiganten.Service
         }
         public void AddItem(Item item)
         {
+            item.Id = Item.nextId++;
             items.Add(item);
             JsonFileItemService.SaveJsonItems(items);
         }
@@ -37,7 +39,21 @@ namespace Elgiganten.Service
             }
             return nameSearch;
         }
-        public IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0)
+
+        public IEnumerable<Item> TypeSearch(string str)
+        {
+            List<Item> typeSearch = new List<Item>();
+            foreach (Item item in items)
+            {
+                if (item.Type.ToLower().Contains(str.ToLower()))
+                {
+                    typeSearch.Add(item);
+                }
+            }
+            return typeSearch;
+        }
+
+            public IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0)
         {
             List<Item> filterList = new List<Item>();
             foreach (Item item in items)
@@ -57,7 +73,10 @@ namespace Elgiganten.Service
                 {
                     if (i.Id == item.Id)
                     {
+                        i.Type = item.Type;
                         i.Name = item.Name;
+                        i.Brand = item.Brand;
+                        i.Description = item.Description;
                         i.Price = item.Price;
                     }
                 }
