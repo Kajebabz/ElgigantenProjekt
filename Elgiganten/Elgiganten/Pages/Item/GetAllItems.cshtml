@@ -6,48 +6,46 @@
 <h1>Items</h1>
 
 <div class="row">
-    <div class="col-4"><h5>Search Name</h5>
-        <form method="post" class="form-inline">
+    <form method="post" class="form-inline">
+    <div class="col-4">
+        <h5>Search Name</h5>
             <div class="input-group mb-3">
                 <input asp-for="SearchString" class="form-control mr-1" placeholder="Enter Name" />
-                <input type="submit" asp-page-handler="NameSearch" value="Search" class="btn btn-primary" />
             </div>
-        </form>
     </div>
-    <div class="col-4"><h5>Search Type</h5>
-                    <form method="post" class="form-inline">
-                         <div class="input-group mb-3">
-                            <select asp-for="SearchStringType">
-                                   <option value="PC">PC</option>
-                                   <option value="Konsol">Konsol</option>
-                                   <option value="Monitor">Monitor</option>
-                                   <option value="Hardware">Hardware</option>
-                                   <option value="Home">Home</option>
-                                   <option value="Tv og Lyd">Tv og Lyd</option>
-                                   <option value="Mobil og Tablet">Mobil og Tablet</option>
-                            </select>
-                             <input type="submit" asp-page-handler="TypeSearch" value="Search" class="btn btn-primary" />
-                         </div>
-                     </form>
+    <div class="col-4">
+        <h5>Choose Type</h5>
+            <div class="input-group mb-3">
+                <select asp-for="SearchStringType" class="form-control mr-1">
+                    <option value="ShowAll" selected >Show all</option>
+                    <option value="PC">PC</option>
+                    <option value="Konsol">Konsol</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Home">Home</option>
+                    <option value="Tv og Lyd">Tv og Lyd</option>
+                    <option value="Mobil og Tablet">Mobil og Tablet</option>
+                </select>
+            </div>
 
     </div>
-    <div class="col-4"><h5>Filter Price</h5>
-                <form method="post" class="form-inline">
-                     <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                              <span class="input-group-text">Min</span>
-                          </div>
-                             <input asp-for="MinPrice" class="form-control mr-1" />
+    <div class="col-4">
+        <h5>Filter Price</h5>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Min</span>
+                </div>
+                <input asp-for="MinPrice" class="form-control mr-1" />
 
-                         <div class="input-group-prepend">
-                             <span class="input-group-text">Max</span>
-                         </div>
-                             <input asp-for="MaxPrice" class="form-control mr-1" />
-                             <input type="submit" asp-page-handler="PriceFilter" value="Filter" class="btn btn-primary" />
-                     </div>
-                </form>
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Max</span>
+                </div>
+                <input asp-for="MaxPrice" class="form-control mr-1" />
+                <input type="submit" asp-page-handler="SearchAll" value="Search" class="btn btn-primary" />
+            </div>
     </div>
     <div class="col-4"></div>
+    </form>
 </div>
 
 

@@ -27,44 +27,44 @@ namespace Elgiganten.Service
             items.Add(item);
             JsonFileItemService.SaveJsonItems(items);
         }
-        public IEnumerable<Item> NameSearch(string str)
-        {
-            List<Item> nameSearch = new List<Item>();
-            foreach (Item item in items)
-            {
-                if (item.Name.ToLower().Contains(str.ToLower()))
-                {
-                    nameSearch.Add(item);
-                }
-            }
-            return nameSearch;
-        }
+        //public IEnumerable<Item> NameSearch(string str)
+        //{
+        //    List<Item> nameSearch = new List<Item>();
+        //    foreach (Item item in items)
+        //    {
+        //        if (item.Name.ToLower().Contains(str.ToLower()))
+        //        {
+        //            nameSearch.Add(item);
+        //        }
+        //    }
+        //    return nameSearch;
+        //}
 
-        public IEnumerable<Item> TypeSearch(string str)
-        {
-            List<Item> typeSearch = new List<Item>();
-            foreach (Item item in items)
-            {
-                if (item.Type.ToLower().Contains(str.ToLower()))
-                {
-                    typeSearch.Add(item);
-                }
-            }
-            return typeSearch;
-        }
+        //public IEnumerable<Item> TypeSearch(string str)
+        //{
+        //    List<Item> typeSearch = new List<Item>();
+        //    foreach (Item item in items)
+        //    {
+        //        if (item.Type.ToLower().Contains(str.ToLower()))
+        //        {
+        //            typeSearch.Add(item);
+        //        }
+        //    }
+        //    return typeSearch;
+        //}
 
-            public IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0)
-        {
-            List<Item> filterList = new List<Item>();
-            foreach (Item item in items)
-            {
-                if (item.Price>=minPrice && item.Price<=maxPrice)
-                {
-                    filterList.Add(item);
-                }
-            }
-            return filterList;
-        }
+        //    public IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0)
+        //{
+        //    List<Item> filterList = new List<Item>();
+        //    foreach (Item item in items)
+        //    {
+        //        if (item.Price>=minPrice && item.Price<=maxPrice)
+        //        {
+        //            filterList.Add(item);
+        //        }
+        //    }
+        //    return filterList;
+        //}
         public void UpdateItem(Item item)
         {
             if (item != null)
@@ -109,6 +109,24 @@ namespace Elgiganten.Service
                 JsonFileItemService.SaveJsonItems(items);
             }
             return itemToBeDeleted;
+        }
+        public IEnumerable<Item> SearchAll(string name, string type, int minPrice, int maxPrice)
+        {
+            List<Item> SearchResult = new List<Item>();
+            foreach (Item item in items)
+            {
+                if (name == null || item.Name.ToLower().Contains(name.ToLower()))
+                {
+                    if (type == "ShowAll" || item.Type.ToLower().Contains(type.ToLower()))
+                    {
+                        if (item.Price >= minPrice && item.Price <= maxPrice || minPrice == 0 && maxPrice == 0)
+                        {
+                            SearchResult.Add(item);
+                        }
+                    }
+                }
+            }
+            return SearchResult;
         }
 
     }
