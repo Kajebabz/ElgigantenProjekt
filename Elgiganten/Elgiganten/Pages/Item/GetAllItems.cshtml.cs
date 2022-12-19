@@ -27,19 +27,9 @@ namespace Elgiganten.Pages.Item
             return Page();
         }
 
-        public IActionResult OnPostNameSearch()
+        public IActionResult OnPostSearchAll()
         {
-            Items = _itemService.NameSearch(SearchString).ToList();
-            return Page();
-        }
-        public IActionResult OnPostTypeSearch()
-        {
-            Items = _itemService.TypeSearch(SearchStringType).ToList();
-            return Page();
-        }
-        public IActionResult OnPostPriceFilter(int maxPrice, int minPrice = 0)
-        {
-            Items = _itemService.PriceFilter(maxPrice, minPrice).ToList();
+            Items = _itemService.SearchAll(SearchString, SearchStringType, MinPrice, MaxPrice).ToList();
             return Page();
         }
     }
