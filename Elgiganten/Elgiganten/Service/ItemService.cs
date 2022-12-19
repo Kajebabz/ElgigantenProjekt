@@ -27,6 +27,8 @@ namespace Elgiganten.Service
             items.Add(item);
             JsonFileItemService.SaveJsonItems(items);
         }
+        // Bruger nu SearchAll istedet.
+
         //public IEnumerable<Item> NameSearch(string str)
         //{
         //    List<Item> nameSearch = new List<Item>();
@@ -65,6 +67,8 @@ namespace Elgiganten.Service
         //    }
         //    return filterList;
         //}
+
+  
         public void UpdateItem(Item item)
         {
             if (item != null)

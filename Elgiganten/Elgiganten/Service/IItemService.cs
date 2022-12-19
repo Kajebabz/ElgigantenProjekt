@@ -10,6 +10,7 @@ namespace Elgiganten.Service
         void UpdateItem(Item item);
         Item GetItem(int id);
         Item DeleteItem(int? itemId);
+        // Bruger nu SearchAll istedet. 
         //IEnumerable<Item> NameSearch(string str);
         //IEnumerable<Item> TypeSearch(string str);
         //IEnumerable<Item> PriceFilter(int maxPrice, int minPrice = 0);
